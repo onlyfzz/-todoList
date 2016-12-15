@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>-todolist by onlyfzz</title>
-
-  </head>
-  <body>
-  
-  </body>
+<head>
+<meta charset="utf-8">
+	<title>todo清单应用</title>
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+</head>
+<body>
+	<div class="msg">
+		<span class="msg-cont"></span>
+		<button class="msg-bt">知道了</button>
+	</div>
+	<!-- 清单应用开始 -->
+	<div class="container">
+		<h1>我的备忘录</h1>
+		<!-- 添加任务开始 -->
+		<div class="add-task">
+			<form>
+				<input type="text" placeholder="请添加备忘事项" autofocus autocomplete="off">
+				<button type="submit" id="submit">确认</button>
+			</form>
+		<!-- 添加任务结束 -->
+		</div>
+		<!-- 清单列表开始 -->
+		<div class="task-list" id="task-list">
+		<!-- 清单列表结束 -->
+		</div>
+		<!-- 任务详细信息开始 -->
+		<div class="task-detail">
+			
+		<!-- 任务详细信息结束 -->
+		</div>
+	<!-- 清单应用结束 -->
+	</div>
+	<div class="mask" id="mask"></div>
+	<video class="alert" src="alert.mp3"></video>
+<script src="../js/jquery.js"></script>
+<script src="node_modules/store/store.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
